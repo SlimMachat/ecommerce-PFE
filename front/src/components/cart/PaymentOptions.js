@@ -13,11 +13,11 @@ const PaymentOptions = ({ item ,history,processPayment}) => {
     const subtotal = calc.Price * calc.quantity;
     return subtotalCalc += subtotal;
   });
-  const tax = subtotalCalc * 0.13;
+  
 
   
 
-  const grandtotal = subtotalCalc  + tax;
+  const grandtotal = subtotalCalc  ;
   const config = {
     headers: {
       'Content-Type': 'application/json'
@@ -48,10 +48,7 @@ const PaymentOptions = ({ item ,history,processPayment}) => {
             <span>Subtotal</span>
             <span>{subtotalCalc.toFixed(2)}</span>
           </div>
-          <div className='receipt-content'>
-            <span>Tax</span>
-            <span>{tax.toFixed(2)}</span>
-          </div>
+        
         
           <div className='receipt-content'>
             <strong>Total</strong>
@@ -59,7 +56,7 @@ const PaymentOptions = ({ item ,history,processPayment}) => {
           </div>
         </div>
         <div className='btn-container' >
-          <button  onClick={()=>{addtoCheckout()}} >Click to Confirm</button>
+          <button  style = {{color : 'white', width : '700px',height:'50px'}} onClick={()=>{addtoCheckout()}} >Click to Confirm</button>
         </div>
       </div>
     </PaymentOptionsStyled>

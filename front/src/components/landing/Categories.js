@@ -7,7 +7,7 @@ const Categories = () => {
   return (
     <CategoriesStyled>
       <div  className='intro' >
-        <h1 >HEY THERE WE GLAD YOU HERE </h1>
+        <h1 > enjoy </h1>
         <p style={{color: "black"}}>SNEAKERS EVERY WHERE</p>
       </div>
       <div className='categories container'>

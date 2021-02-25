@@ -50,8 +50,8 @@ const SideCart = ({ cart, close, clearItem, toggleSideCart, auth: { isAuthentica
             </div>
             <div className='buttons'>
             {!isAuthenticated
-                  ? <Link  to='/my-account/login' onClick={() => toggleSideCart()}><button style={{backgroundColor: "black"}}  className='checkout-btn'>a3ml compte nik omk</button></Link>
-                  : <Link to='/cart' onClick={() => toggleSideCart()}><button style={{backgroundColor: "black"}} className='checkout-btn'>sahiit asbaa</button></Link>
+                  ? <Link  to='/my-account/login' onClick={() => toggleSideCart()}><button style={{backgroundColor: "black"}}  className='checkout-btn'>view card</button></Link>
+                  : <Link to='/cart' onClick={() => toggleSideCart()}><button style={{backgroundColor: "black"}} className='checkout-btn'>view card </button></Link>
                 }
             <div>
                 {!isAuthenticated

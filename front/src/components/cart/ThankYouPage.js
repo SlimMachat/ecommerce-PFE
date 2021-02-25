@@ -11,10 +11,8 @@ export default class ThankYouPage extends React.Component {
         <div class="thanks">
             <h1 class="display-3">Thank You!</h1>
             <h2>Your order has been confirmed.</h2>
-            <p class="lead"><strong>Please check your email</strong> for further instructions on when you will receive the delivery.</p>
-            <p class="lead">
-                The payment will be done when delivery received.
-            </p>
+            <p class="lead"><strong>Enjoy your day</strong> </p>
+            
             <Link class="home" to="/"> Home Page </Link>
         </div></Thanks>
         )

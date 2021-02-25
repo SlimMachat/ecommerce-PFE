@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <FooterStyled className="copy">
 
-      <p  style={{marginLeft:"550px"}}>©CreatedBy Fares.Jasser.Slim</p>
+      <p  style={{marginLeft:"650px" , color : 'white'}}>©CreatedBy Fares.Jasser.Slim</p>
 
       </FooterStyled>
       

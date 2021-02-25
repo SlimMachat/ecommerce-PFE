@@ -6,7 +6,7 @@ import { logout } from '../../redux/action/authAction'
 import { toggleSideCart } from '../../redux/action/cartAction'
 import SideCart from '../cart/SideCart'
 import styled from 'styled-components'
-import MobileNavbar from './MobileNavbar'
+
 import { getProducts } from '../../redux/action/productAction'
 import axios from 'axios'
 import { useHistory } from "react-router-dom";
@@ -115,7 +115,7 @@ const Navbar = ({
           {!loading && isAuthenticated ? authLinks : guestLinks}
         </LogInAndCart>
       </NavbarStyled>
-      <MobileNavbar cartItemQty={cartItemQty}/>
+      
       {hidden ? null : <SideCart close={toggleSideCart} />}
     </>
   )
