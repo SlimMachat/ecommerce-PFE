@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Poppins:wght@600&family=Lora:wght@500&display=swap");
+
+:root {
+  --primary-clr: #000000;
+  --dark-clr: #000000;
+  --text-clr: #4c4c4c;
+  --faint-grey: rgba(136, 136, 136, 0.12);
+  --fainter-grey: rgba(136, 136, 136, 0.04);
+  --light-gold: #e0b252;
+  --dark-gold: #af7d27;
+  --light-bg: #050505;
+  --red-clr: rgb(250, 173, 173);
+  --light-clr: #ffffff;
+  --primary-ff: "Karla", sans-serif;
+  --title-ff: "Poppins", sans-serif;
+  --product-ff: "Lora", serif;
+  --input-border: 1px solid rgba(129, 129, 129, 0.25);
+  --input-focus-border: 1px solid rgba(129, 129, 129, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-ff);
+  background-color: var(--light-clr);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--dark-clr);
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--dark-clr);
+}
+
+p {
+  color: var(--text-clr);
+}
+
+input,
+button {
+  font-family: var(--primary-ff);
+}
+
+input:focus,
+button:focus,
+button:active {
+  outline: none;
+  border: var(--input-focus-border);
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
